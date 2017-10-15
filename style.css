@@ -19,8 +19,6 @@ html, body {
 
 button.wbl-menu-button:focus {
   outline: none; }
-button.wbl-menu-button:active {
-  transform: rotate3d(0, 0, 1, 180deg); }
 button.wbl-menu-button {
   right: 40px;
   top: 40px;
@@ -30,8 +28,6 @@ button.wbl-menu-button {
   padding: 0;
   z-index: 999; }
 
-button
-button
 .hamburger-box.wbl-close:hover {
   /*transform:rotate3d(0, 0, 1, 180deg);*/ }
 
@@ -45,17 +41,50 @@ button
     width: 0px; }
   100% {
     width: 40px; } }
+@keyframes close_vis {
+  0% {
+    width: 40px; }
+  40% {
+    width: 45px; }
+  60% {
+    width: 30px; }
+  100% {
+    width: 40px; } }
+@keyframes close_vis_first {
+  0% {
+    transform: translate(0, 13px) rotate3d(0, 0, 1, 0deg); }
+  40% {
+    transform: translate(0, 13px) rotate3d(0, 0, 1, 245deg); }
+  60% {
+    transform: translate(0, 13px) rotate3d(0, 0, 1, 220deg); }
+  100% {
+    transform: translate(0, 13px) rotate3d(0, 0, 1, 225deg); } }
+@keyframes close_vis_last {
+  0% {
+    transform: translate(0, -13px) rotate3d(0, 0, 1, 0deg); }
+  40% {
+    transform: translate(0, -13px) rotate3d(0, 0, 1, -245deg); }
+  60% {
+    transform: translate(0, -13px) rotate3d(0, 0, 1, -220deg); }
+  100% {
+    transform: translate(0, -13px) rotate3d(0, 0, 1, -225deg); } }
+@keyframes close_vis_middle {
+  0% {
+    width: 100%; }
+  40% {
+    width: 0%; }
+  100% {
+    width: 0%; } }
 .hamburger-box.wbl-close .hamburger-inner:last-child {
-  transform: translate(0, -10px) rotate3d(0, 0, 1, -45deg);
-  /*animation: close 0.5s normal forwards;*/ }
+  animation: close_vis 0.5s normal forwards;
+  animation: close_vis_last 0.5s normal forwards; }
 
 .hamburger-box.wbl-close .hamburger-inner:first-child {
-  transform: translate(0, 10px) rotate3d(0, 0, 1, 45deg);
-  /*animation: close 0.5s normal forwards;*/ }
+  animation: close_vis 0.5s normal forwards;
+  animation: close_vis_first 0.5s normal forwards; }
 
 .hamburger-box.wbl-close .hamburger-inner:nth-child(2) {
-  display: none;
-  animation: close 0.5s normal backwards; }
+  animation: close_vis_middle 0.5s normal forwards; }
 
 .hamburger-box {
   display: flex;
@@ -63,15 +92,15 @@ button
   -ms-flex-direction: column;
   flex-direction: column;
   justify-content: space-around;
-  transition: all 0.3s ease-in;
+  align-items: center;
+  transition: all 0.5s ease-in;
   width: 40px;
   height: 40px; }
 
 .hamburger-inner {
   width: 100%;
-  height: 2px;
-  background-color: #000;
-  transition: all 0.1s ease-in; }
+  height: 6px;
+  background-color: #000; }
 
 .nav-bg-container {
   position: absolute;

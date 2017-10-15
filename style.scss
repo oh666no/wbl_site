@@ -55,15 +55,15 @@ button{
     100% {transform:translate(0, 13px) rotate(225deg);}
 }
 @keyframes close_vis_last {
-    0%   {transform:translate(0, -13px) rotate(0deg);}
-    40% {transform:translate(0, -13px) rotate(-245deg);}
-    60% {transform:translate(0, -13px) rotate(-220deg);}
-    100% {transform:translate(0, -13px) rotate(-225deg);}
+    0%   {transform:translate(0, -11px) rotate(0deg);}
+    40% {transform:translate(0, -11px) rotate(-245deg);}
+    60% {transform:translate(0, -11px) rotate(-220deg);}
+    100% {transform:translate(0, -11px) rotate(-225deg);}
 }
 @keyframes close_vis_middle {
     0%   {width:100%;}
     40% {width:0%;}
-    100% {width:0%;}
+    100% {width:0%;height:0;}
 }
 @keyframes open_vis_first {
     0%   {transform:translate(0, 13px) rotate(0deg);}
@@ -72,15 +72,15 @@ button{
     100% {transform:translate(0, 13px) rotate(225deg);}
 }
 @keyframes open_vis_last {
-    0%   {transform:translate(0, -13px) rotate(0deg);}
-    40% {transform:translate(0, -13px) rotate(-245deg);}
-    60% {transform:translate(0, -13px) rotate(-220deg);}
-    100% {transform:translate(0, -13px) rotate(-225deg);}
+    0%   {transform:translate(0, -11px) rotate(0deg);}
+    40% {transform:translate(0, -11px) rotate(-245deg);}
+    60% {transform:translate(0, -11px) rotate(-220deg);}
+    100% {transform:translate(0, -11px) rotate(-225deg);}
 }
 @keyframes open_vis_middle {
     0%   {width:100%;}
     40% {width:0%;}
-    100% {width:0%;}
+    100% {width:0%;height:0;}
 }
 .hamburger-box.wbl-close {
     .hamburger-inner:first-child{

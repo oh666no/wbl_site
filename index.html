@@ -75,8 +75,8 @@
         jQuery(document).ready(function($){
             $('#menu_toggle').click(function(){
                 if (!$(this).hasClass("wbl-close")){
-                    $(this).addClass("wbl-close");
                     $(this).removeClass("wbl-opened");
+                    $(this).addClass("wbl-close");
                 } else {
                     $(this).removeClass("wbl-close");
                     if (!$(this).hasClass("wbl-opened")){

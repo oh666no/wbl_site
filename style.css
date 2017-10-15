@@ -33,22 +33,22 @@ button.wbl-menu-button {
 
 @keyframes close_vis_first {
   0% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 0deg); }
+    transform: translate(0, 13px) rotate(0deg); }
   40% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 245deg); }
+    transform: translate(0, 13px) rotate(245deg); }
   60% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 220deg); }
+    transform: translate(0, 13px) rotate(220deg); }
   100% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 225deg); } }
+    transform: translate(0, 13px) rotate(225deg); } }
 @keyframes close_vis_last {
   0% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, 0deg); }
+    transform: translate(0, -13px) rotate(0deg); }
   40% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, -245deg); }
+    transform: translate(0, -13px) rotate(-245deg); }
   60% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, -220deg); }
+    transform: translate(0, -13px) rotate(-220deg); }
   100% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, -225deg); } }
+    transform: translate(0, -13px) rotate(-225deg); } }
 @keyframes close_vis_middle {
   0% {
     width: 100%; }
@@ -58,22 +58,22 @@ button.wbl-menu-button {
     width: 0%; } }
 @keyframes open_vis_first {
   0% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 0deg); }
+    transform: translate(0, 13px) rotate(0deg); }
   40% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 245deg); }
+    transform: translate(0, 13px) rotate(245deg); }
   60% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 220deg); }
+    transform: translate(0, 13px) rotate(220deg); }
   100% {
-    transform: translate(0, 13px) rotate3d(0, 0, 1, 225deg); } }
+    transform: translate(0, 13px) rotate(225deg); } }
 @keyframes open_vis_last {
   0% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, 0deg); }
+    transform: translate(0, -13px) rotate(0deg); }
   40% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, -245deg); }
+    transform: translate(0, -13px) rotate(-245deg); }
   60% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, -220deg); }
+    transform: translate(0, -13px) rotate(-220deg); }
   100% {
-    transform: translate(0, -13px) rotate3d(0, 0, 1, -225deg); } }
+    transform: translate(0, -13px) rotate(-225deg); } }
 @keyframes open_vis_middle {
   0% {
     width: 100%; }

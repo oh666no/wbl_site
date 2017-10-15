@@ -1,0 +1,122 @@
+* {
+  transition: all 0.5s ease-in; }
+
+html, body {
+  font-family: 'PT Sans', sans-serif;
+  height: 100%;
+  overflow: auto; }
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 50%; }
+  #menu nav {
+    z-index: 2;
+    position: relative; }
+  #menu ul {
+    list-style: none; }
+
+button.wbl-menu-button:focus {
+  outline: none; }
+button.wbl-menu-button:active {
+  transform: rotate3d(0, 0, 1, 180deg); }
+button.wbl-menu-button {
+  right: 40px;
+  top: 40px;
+  position: fixed;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  z-index: 999; }
+
+button
+button
+.hamburger-box.wbl-close:hover {
+  /*transform:rotate3d(0, 0, 1, 180deg);*/ }
+
+.hamburger-box.wbl-close {
+  /*transform:rotate3d(0, 0, 1, -360deg);*/ }
+
+@keyframes close {
+  0% {
+    width: 40px; }
+  50% {
+    width: 0px; }
+  100% {
+    width: 40px; } }
+.hamburger-box.wbl-close .hamburger-inner:last-child {
+  transform: translate(0, -10px) rotate3d(0, 0, 1, -45deg);
+  /*animation: close 0.5s normal forwards;*/ }
+
+.hamburger-box.wbl-close .hamburger-inner:first-child {
+  transform: translate(0, 10px) rotate3d(0, 0, 1, 45deg);
+  /*animation: close 0.5s normal forwards;*/ }
+
+.hamburger-box.wbl-close .hamburger-inner:nth-child(2) {
+  display: none;
+  animation: close 0.5s normal backwards; }
+
+.hamburger-box {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.3s ease-in;
+  width: 40px;
+  height: 40px; }
+
+.hamburger-inner {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.1s ease-in; }
+
+.nav-bg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  transform: translate3d(100%, -100%, 0) rotate3d(0, 0, 1, 0deg);
+  transform: translate3d(50%, -60%, 0) rotate3d(0, 0, 1, 40deg);
+  width: 1700px;
+  height: 700px;
+  z-index: 1; }
+
+main {
+  margin: 20px;
+  padding: 20px;
+  background-color: #3ccc80;
+  height: calc(100% - 40px); }
+
+h1 {
+  padding: 0.67em 0;
+  margin: 0; }
+
+h1, h2 {
+  font-family: 'Comfortaa', cursive; }
+
+h3, h4, h5, h6 {
+  font-family: 'PT Sans', sans-serif; }
+
+h4 {
+  text-transform: uppercase; }
+
+a {
+  color: black;
+  font-weight: 400;
+  border-bottom: 1px dotted black; }
+
+a:focus, a:hover {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid black; }
+
+a:visited {
+  color: #737373; }
+
+.container-fluid {
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

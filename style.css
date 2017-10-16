@@ -53,7 +53,8 @@ button.wbl-menu-button {
   0% {
     width: 100%; }
   40% {
-    width: 0%; }
+    width: 0%;
+    height: 0; }
   100% {
     width: 0%;
     height: 0; } }
@@ -79,23 +80,24 @@ button.wbl-menu-button {
   0% {
     width: 100%; }
   40% {
-    width: 0%; }
+    width: 0%;
+    height: 0; }
   100% {
     width: 0%;
     height: 0; } }
 .hamburger-box.wbl-close .hamburger-inner:first-child {
-  animation: close_vis_first 0.5s normal forwards; }
+  animation: close_vis_first 1s normal forwards; }
 .hamburger-box.wbl-close .hamburger-inner:last-child {
-  animation: close_vis_last 0.5s normal forwards; }
+  animation: close_vis_last 1s normal forwards; }
 .hamburger-box.wbl-close .hamburger-inner:nth-child(2) {
-  animation: close_vis_middle 0.5s normal forwards; }
+  animation: close_vis_middle 1s normal forwards; }
 
 .hamburger-box.wbl-opened .hamburger-inner:first-child {
-  animation: open_vis_first 0.5s reverse backwards; }
+  animation: open_vis_first 1s reverse backwards; }
 .hamburger-box.wbl-opened .hamburger-inner:last-child {
-  animation: open_vis_last 0.5s reverse backwards; }
+  animation: open_vis_last 1s reverse backwards; }
 .hamburger-box.wbl-opened .hamburger-inner:nth-child(2) {
-  animation: open_vis_middle 0.5s reverse backwards; }
+  animation: open_vis_middle 1s reverse backwards; }
 
 .hamburger-box {
   display: flex;
@@ -104,7 +106,6 @@ button.wbl-menu-button {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: all 0.5s ease-in;
   width: 40px;
   height: 40px; }
 
